@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/elrohifilmon/Documents/proj/myC#/paymentsystembackend/paymentsystembackend.csproj": {}
+    "/Users/elrohifilmon/Documents/vcs/github.com/elrohi/decentralized-backend/paymentsystembackend.csproj": {}
   },
   "projects": {
-    "/Users/elrohifilmon/Documents/proj/myC#/paymentsystembackend/paymentsystembackend.csproj": {
+    "/Users/elrohifilmon/Documents/vcs/github.com/elrohi/decentralized-backend/paymentsystembackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/elrohifilmon/Documents/proj/myC#/paymentsystembackend/paymentsystembackend.csproj",
+        "projectUniqueName": "/Users/elrohifilmon/Documents/vcs/github.com/elrohi/decentralized-backend/paymentsystembackend.csproj",
         "projectName": "paymentsystembackend",
-        "projectPath": "/Users/elrohifilmon/Documents/proj/myC#/paymentsystembackend/paymentsystembackend.csproj",
+        "projectPath": "/Users/elrohifilmon/Documents/vcs/github.com/elrohi/decentralized-backend/paymentsystembackend.csproj",
         "packagesPath": "/Users/elrohifilmon/.nuget/packages/",
-        "outputPath": "/Users/elrohifilmon/Documents/proj/myC#/paymentsystembackend/obj/",
+        "outputPath": "/Users/elrohifilmon/Documents/vcs/github.com/elrohi/decentralized-backend/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/elrohifilmon/.nuget/NuGet/NuGet.Config"

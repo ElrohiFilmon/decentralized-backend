@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lx9fRrmL55U=",
+  "dgSpecHash": "1oLWgxKj5I0=",
   "success": true,
-  "projectFilePath": "/Users/elrohifilmon/Documents/proj/myC#/paymentsystembackend/paymentsystembackend.csproj",
+  "projectFilePath": "/Users/elrohifilmon/Documents/vcs/github.com/elrohi/decentralized-backend/paymentsystembackend.csproj",
   "expectedPackageFiles": [
     "/Users/elrohifilmon/.nuget/packages/chaos.nacl.standard/1.0.0/chaos.nacl.standard.1.0.0.nupkg.sha512",
     "/Users/elrohifilmon/.nuget/packages/microsoft.extensions.configuration/6.0.0/microsoft.extensions.configuration.6.0.0.nupkg.sha512",

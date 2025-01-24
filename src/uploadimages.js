@@ -1,0 +1,1 @@
+// const arweaveKey = JSON.parse(process.env.ARWEAVE_KEY!) as JWKInterface

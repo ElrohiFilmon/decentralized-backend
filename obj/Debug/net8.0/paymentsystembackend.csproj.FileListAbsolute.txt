@@ -1,0 +1,14 @@
+/Users/elrohifilmon/Documents/proj/myC#/paymentsystembackend/bin/Debug/net8.0/paymentsystembackend
+/Users/elrohifilmon/Documents/proj/myC#/paymentsystembackend/bin/Debug/net8.0/paymentsystembackend.deps.json
+/Users/elrohifilmon/Documents/proj/myC#/paymentsystembackend/bin/Debug/net8.0/paymentsystembackend.runtimeconfig.json
+/Users/elrohifilmon/Documents/proj/myC#/paymentsystembackend/bin/Debug/net8.0/paymentsystembackend.dll
+/Users/elrohifilmon/Documents/proj/myC#/paymentsystembackend/bin/Debug/net8.0/paymentsystembackend.pdb
+/Users/elrohifilmon/Documents/proj/myC#/paymentsystembackend/obj/Debug/net8.0/paymentsystembackend.GeneratedMSBuildEditorConfig.editorconfig
+/Users/elrohifilmon/Documents/proj/myC#/paymentsystembackend/obj/Debug/net8.0/paymentsystembackend.AssemblyInfoInputs.cache
+/Users/elrohifilmon/Documents/proj/myC#/paymentsystembackend/obj/Debug/net8.0/paymentsystembackend.AssemblyInfo.cs
+/Users/elrohifilmon/Documents/proj/myC#/paymentsystembackend/obj/Debug/net8.0/paymentsystembackend.csproj.CoreCompileInputs.cache
+/Users/elrohifilmon/Documents/proj/myC#/paymentsystembackend/obj/Debug/net8.0/paymentsystembackend.dll
+/Users/elrohifilmon/Documents/proj/myC#/paymentsystembackend/obj/Debug/net8.0/refint/paymentsystembackend.dll
+/Users/elrohifilmon/Documents/proj/myC#/paymentsystembackend/obj/Debug/net8.0/paymentsystembackend.pdb
+/Users/elrohifilmon/Documents/proj/myC#/paymentsystembackend/obj/Debug/net8.0/paymentsystembackend.genruntimeconfig.cache
+/Users/elrohifilmon/Documents/proj/myC#/paymentsystembackend/obj/Debug/net8.0/ref/paymentsystembackend.dll

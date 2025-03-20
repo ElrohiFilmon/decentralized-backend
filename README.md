@@ -1,4 +1,19 @@
 # decentralized-backend
+
+This program is designed to register, sell, and manage cars using blockchain technology. It interacts with the Solana blockchain to mint a unique digital certificate (NFT) for each car and stores its details securely on Arweave.
+
+How It Works
+Reads a private key from the computer to access the Solana wallet.
+Uploads car details (like images and documents) to Arweave for secure storage.
+Creates a digital certificate (NFT) for the car, linking it to the uploaded data.
+Registers the car on the blockchain, making it easy to track and verify ownership.
+Allows transactions like selling and transferring ownership securely.
+Key Features
+Private Key (PRIVATE_KEY): Needed to access and sign transactions on the Solana blockchain.
+Arweave Key (ARWEAVE_KEY): Used to store car images and documents securely.
+Minting NFTs: Creates a unique, verifiable record for each car.
+Ownership Transfers: Enables secure selling and tracking of car ownership.
+
 The back end code for the decentralized car payment system. 
 ![Contact Manager](./car.png)
 # Program.cs

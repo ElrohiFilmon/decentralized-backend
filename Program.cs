@@ -7,8 +7,6 @@ using System.Text;
 using Newtonsoft.Json.Linq;
 using Solnet.Rpc;
 using Solnet.Wallet;
-using Solnet.Wallet.Utilities;
-using Solnet.Rpc.Core.Http;
 using Solnet.Rpc.Builders;
 
 class Program
@@ -34,18 +32,29 @@ class Program
         };
 
         var latestBlockhash = await rpcClient.GetRecentBlockHashAsync();
+        var wallet = new Wallet(privateKey);
+
+        var mintAccount = wallet.GenerateNewAccount();
         var transactionBuilder = new TransactionBuilder()
             .SetRecentBlockHash(latestBlockhash.Result.Value.Blockhash)
-            .SetFeePayer(new PublicKey(privateKey));
+            .SetFeePayer(wallet.Account.PublicKey)
+            .AddInstruction(SystemProgram.CreateAccount(
+                wallet.Account.PublicKey,
+                mintAccount.PublicKey,
+                10000000, 
+                82,     
+                TokenProgram.ProgramIdKey))
+            .AddInstruction(TokenProgram.InitializeMint(
+                mintAccount.PublicKey,
+                0, 
+                wallet.Account.PublicKey,
+                wallet.Account.PublicKey));
 
-        var transaction = transactionBuilder.Build(new Wallet(privateKey).Account);
-
-        // Sign the transaction
-        var wallet = new Wallet(privateKey);
+        var transaction = transactionBuilder.Build(wallet.Account);
         var signedTransaction = wallet.Account.Sign(transaction);
 
         var result = await rpcClient.SendTransactionAsync(signedTransaction);
-        Console.WriteLine(result);
+        Console.WriteLine($"Transaction Result: {result.Result}");
     }
 
     private static async Task<string> UploadToArweaveAsync(string filePath)
@@ -63,8 +72,7 @@ class Program
             var httpContent = new StringContent(content.ToString(), Encoding.UTF8, "application/json");
             httpContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
 
-            // Add your Arweave wallet key to the request headers
-            string arweaveKey = Environment.GetEnvironmentVariable("d");
+            string arweaveKey = Environment.GetEnvironmentVariable("ARWEAVE_KEY");
             if (string.IsNullOrEmpty(arweaveKey))
             {
                 throw new InvalidOperationException("Arweave key is not set in the environment variables.");
